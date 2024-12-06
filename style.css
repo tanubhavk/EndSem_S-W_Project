@@ -43,12 +43,6 @@
   nav a:hover{
     border-bottom:2px solid white;
   }
-  nav i{
-    margin-left:200px;
-    /* position:relative; */
-    /* z-index:1; */
-    color:white;
-  }
   .content{
     margin-top:200px;
     text-align:center;
