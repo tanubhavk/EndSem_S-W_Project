@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariner 4</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    cursor: url(earth-cursor.png), auto;
+}
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    background-image: url(space-background2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    height: 100%;
+}
+/* Header Styling */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+.heading {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+/* Video Section */
+.main-container{
+    width:100%;
+    height:100vh;
+}
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width:60%;
+    height:70%;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #000000;
+}
+.video-section video {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* Content Section */
+.content-section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(24, 24, 24, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(55, 55, 55, 0.5);
+}
+.content-section h2 {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.content-section p {
+    font-size: 1.2rem;
+    color: #9F9C9C;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.content-section p strong {
+    color: #706A6A;
+}
+/* Animation for fade-in effect */
+[data-animate="fade-in"] {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    .content-section p {
+        font-size: 1rem;
+    }
+    .video-section {
+        height: 250px;
+    }
+}
+.left{
+    position:relative;
+    left:20%;
+}
+.right{
+    position:relative;
+    left:-20%;
+}
+nav{
+  width:100%;
+  display:flex;
+  position:absolute;
+  top:40px;
+  margin-right:150px;
+  align-items:center;
+  justify-content:end;
+}
+nav ul li{
+  list-style:none;
+  display:inline;
+  margin-right:80px;
+}
+nav a{
+  text-decoration:none;
+  font-size:24px;
+  color:white;
+  border:none;
+}
+nav a:hover{
+  border-bottom:2px solid white;
+}
+.heading{
+    margin-top:100px;
+}
+</style>
+</head>
+<body>
+    <div class="paleblue">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <h1 class="heading">Mariner 4: Exploring Mars</h1>
+    </header>
+    <div class="main-container">
+        <div class="video-section" data-animate="fade-in">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-yyzw45ouPQ" title="Mariner 4: Exploring Mars" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>What was Mariner 4?</h2>
+            <p>Mariner 4 was the first spacecraft to successfully fly by Mars, launched by NASA. Its mission provided the first close-up images of the Martian surface and valuable data on interplanetary space.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Mission: Mariner 4</h2>
+            <p><strong>Launch Date:</strong> November 28, 1964</p>
+            <p><strong>Objective:</strong> Its primary mission was to perform a flyby of Mars, capturing images and collecting scientific data about the planet’s surface, atmosphere, and radiation environment.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Journey</h2>
+            <p>Mariner 4 traveled for about 228 days, reaching Mars on **July 14, 1965**, and passing within 9,846 km (6,118 miles) of the planet.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Discoveries</h2>
+            <p>It sent back 21 images of Mars, revealing a cratered surface similar to that of the Moon, and confirmed that Mars lacked a significant magnetic field or dense atmosphere.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Outcome</h2>
+            <p>Mariner 4 marked the beginning of interplanetary exploration, proving that robotic spacecraft could travel vast distances and collect valuable data from other planets.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Legacy</h2>
+            <p>The mission paved the way for future Mars exploration, inspiring scientists and engineers to design more sophisticated missions to uncover the secrets of the Red Planet.</p>
+        </div>
+    </div>
+</body>
+</html>

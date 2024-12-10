@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sputinik 1</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    /* changed the cursor to EARTH */
+    cursor: url(earth-cursor.png),auto;
+}
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    background-image: url(space-background2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    height: 100%;
+}
+/* Header Styling */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+.heading {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+/* Video Section */
+.main-container{
+    width:100%;
+    height:100vh;
+}
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width:60%;
+    height:70%;
+    border-radius: 20px;
+    /* overflow:visible; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #000000;
+}
+.video-section video {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* Content Section */
+.content-section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(24, 24, 24, 0.9); /* Transparent black */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(55, 55, 55, 0.5);
+}
+.content-section h2 {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.content-section p {
+    font-size: 1.2rem;
+    color: #9F9C9C;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.content-section p strong {
+    color: #706A6A;
+}
+/* Animation for fade-in effect */
+[data-animate="fade-in"] {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    .content-section p {
+        font-size: 1rem;
+    }
+    .video-section {
+        height: 250px;
+    }
+}
+.left{
+    position:relative;
+    left:20%;
+}
+.right{
+    position:relative;
+    left:-20%;
+}
+nav{
+  width:100%;
+  display:flex;
+  position:absolute;
+  top:40px;
+  margin-right:150px;
+  align-items:center;
+  justify-content:end;
+}
+nav ul li{
+  list-style:none;
+  display:inline;
+  margin-right:80px;
+}
+nav a{
+  text-decoration:none;
+  font-size:24px;
+  color:white;
+  border:none;
+  /* transition:(5s); */
+}
+nav a:hover{
+  border-bottom:2px solid white;
+}
+.heading{
+    margin-top:100px;
+}
+</style>
+</head>
+<body>
+    <div class="paleblue">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <h1 class="heading">Luna(1959):Race to Moon</h1>
+    </header>
+    <div class="main-container">
+        <div class="video-section" data-animate="fade-in">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/286pEWc8E7w" title="Luna(1959):Race to Moon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>What are Luna missions?</h2>
+            <p>The Luna program was a series of robotic spacecraft missions conducted by the Soviet Union from 1959 to 1976, aimed at exploring the Moon. These missions were among the earliest attempts at lunar exploration and achieved numerous historic firsts, such as the first human-made object to impact the Moon, the first spacecraft to perform a soft landing, and the first return of lunar soil to Earth.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Mission: Luna 1959</h2>
+            <p><strong>Launch Date:</strong> January 2, 1959</p>
+            <p><strong>Objective:</strong> To impact the Moon and study the interplanetary environment.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Orbit</h2>
+            <p>Luna 1 became the first spacecraft to escape Earth's gravitational pull, entering a heliocentric (solar) orbit.It passed within 5,995 km (3,725 miles) of the Moon's surface on January 4, 1959. While it missed its intended target of crashing into the Moon, this close flyby provided valuable data.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Reach the Moon's Vicinity</h2>
+            <p>Luna 1 was launched on January 2, 1959, and made its closest approach to the Moon on January 4, 1959, approximately 34 hours after launch. At its closest point, it passed within 5,995 kilometers (3,725 miles) of the Moon.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Post-Lunar Trajectory</h2>
+            <p>After missing its target of impacting the Moon, Luna 1 entered a heliocentric orbit (orbiting the Sun) on January 4, 1959. It became the first human-made object to achieve this milestone. Its journey as an artificial "planet" continues indefinitely, orbiting between Earth and Mars.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Outcome</h2>
+            <p>The Luna missions provided detailed images and chemical analyses of the Moon, developed key technologies for soft landings and sample returns, and deepened understanding of the Moon’s origin, geology, and evolution.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Legacy</h2>
+            <p>They inspired subsequent lunar programs, including NASA's Apollo program, and laid the groundwork for modern lunar exploration initiatives.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

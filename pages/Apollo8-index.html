@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo 8: First Manned Lunar Orbit</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    cursor: url(earth-cursor.png),auto;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    background-image: url(space-background2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    height: 100%;
+}
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+.heading {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.main-container{
+    width:100%;
+    height:100vh;
+}
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width:60%;
+    height:70%;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #000000;
+}
+.video-section video {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.content-section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(24, 24, 24, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(55, 55, 55, 0.5);
+}
+.content-section h2 {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.content-section p {
+    font-size: 1.2rem;
+    color: #9F9C9C;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.content-section p strong {
+    color: #706A6A;
+}
+[data-animate="fade-in"] {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    .content-section p {
+        font-size: 1rem;
+    }
+    .video-section {
+        height: 250px;
+    }
+}
+.left{
+    position:relative;
+    left:20%;
+}
+.right{
+    position:relative;
+    left:-20%;
+}
+nav{
+  width:100%;
+  display:flex;
+  position:absolute;
+  top:40px;
+  margin-right:150px;
+  align-items:center;
+  justify-content:end;
+}
+nav ul li{
+  list-style:none;
+  display:inline;
+  margin-right:80px;
+}
+nav a{
+  text-decoration:none;
+  font-size:24px;
+  color:white;
+  border:none;
+}
+nav a:hover{
+  border-bottom:2px solid white;
+}
+.heading{
+    margin-top:100px;
+}
+</style>
+</head>
+<body>
+    <div class="paleblue">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <h1 class="heading">Apollo 8: First Manned Lunar Orbit</h1>
+    </header>
+    <div class="main-container">
+        <div class="video-section" data-animate="fade-in">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Wfd0oC3eFWw" title="Apollo 8: First Manned Lunar Orbit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>What was Apollo 8?</h2>
+            <p>Apollo 8 was the first crewed spacecraft to orbit the Moon and the second mission in NASA's Apollo program. Its successful mission laid the groundwork for the historic Apollo 11 Moon landing in 1969.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Mission: Apollo 8</h2>
+            <p><strong>Launch Date:</strong> December 21, 1968</p>
+            <p><strong>Objective:</strong> The mission's main objective was to orbit the Moon, validate Apollo spacecraft systems in deep space, and prepare for the upcoming Moon landing. It also aimed to provide critical insights into lunar gravity and navigation techniques.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Orbit</h2>
+            <p>Apollo 8 orbited the Moon 10 times, reaching an altitude of 111 kilometers (69 miles) above the lunar surface and providing the first full view of the far side of the Moon.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>The Journey</h2>
+            <p>The spacecraft traveled for about **6 days** and successfully entered lunar orbit, where it provided critical data for future lunar missions before returning to Earth on December 27, 1968.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Outcome</h2>
+            <p>The mission successfully demonstrated that humans could travel to the Moon, orbit it, and return to Earth safely, marking a major milestone in space exploration.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Legacy</h2>
+            <p>Apollo 8's successful orbit of the Moon inspired millions around the world and paved the way for the successful Apollo 11 Moon landing, marking humanity's first steps on another world.</p>
+        </div>
+    </div>
+</body>
+</html>
