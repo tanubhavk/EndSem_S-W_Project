@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Death in Space</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    cursor: url(earth-cursor.png),auto;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    background-image: url(space-background2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    height: 100%;
+}
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+.heading {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.main-container{
+    width:100%;
+    height:100vh;
+}
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width:60%;
+    height:70%;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #000000;
+}
+.video-section video {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.content-section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(24, 24, 24, 0.9); 
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(55, 55, 55, 0.5);
+}
+.content-section h2 {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.content-section p {
+    font-size: 1.2rem;
+    color: #9F9C9C;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.content-section p strong {
+    color: #706A6A;
+}
+[data-animate="fade-in"] {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    .content-section p {
+        font-size: 1rem;
+    }
+    .video-section {
+        height: 250px;
+    }
+}
+.left{
+    position:relative;
+    left:20%;
+}
+.right{
+    position:relative;
+    left:-20%;
+}
+nav{
+  width:100%;
+  display:flex;
+  position:absolute;
+  top:40px;
+  margin-right:150px;
+  align-items:center;
+  justify-content:end;
+}
+nav ul li{
+  list-style:none;
+  display:inline;
+  margin-right:80px;
+}
+nav a{
+  text-decoration:none;
+  font-size:24px;
+  color:white;
+  border:none;
+}
+nav a:hover{
+  border-bottom:2px solid white;
+}
+.heading{
+    margin-top:100px;
+}
+</style>
+</head>
+<body>
+    <div class="paleblue">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <h1 class="heading">First Death in Space</h1>
+    </header>
+    <div class="main-container">
+        <div class="video-section" data-animate="fade-in">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/O6lZpXKkngE" title="First Death in Space" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>What Happened?</h2>
+            <p>The first recorded death in space occurred during the Soyuz 11 mission in 1971, when cosmonauts Georgi Dobrovolski, Viktor Patsayev, and Vladislav Volkov tragically lost their lives due to cabin depressurization.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Mission: Soyuz 11</h2>
+            <p><strong>Launch Date:</strong> June 6, 1971</p>
+            <p><strong>Objective:</strong> The mission's goal was to dock with the Salyut 1 space station and conduct scientific experiments in orbit.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>The Tragedy</h2>
+            <p>While returning to Earth, the Soyuz 11 capsule depressurized, causing the deaths of the three cosmonauts. This was the first and only incident of a human dying in space, outside the Earth's atmosphere, due to a spacecraft malfunction.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Outcome</h2>
+            <p>The tragedy led to significant changes in spacecraft design and safety protocols, ensuring the future safety of cosmonauts and astronauts.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Legacy</h2>
+            <p>The loss of the Soyuz 11 crew serves as a somber reminder of the risks of space exploration, reinforcing the importance of safety and innovation in the ongoing pursuit of space travel.</p>
+        </div>
+    </div>
+</body>
+</html>

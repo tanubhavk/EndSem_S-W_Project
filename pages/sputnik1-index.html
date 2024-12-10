@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sputinik 1</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    /* changed the cursor to EARTH */
+    cursor: url(earth-cursor.png),auto;
+}
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    background-image: url(space-background2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    height: 100%;
+}
+/* Header Styling */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+.heading {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+/* Video Section */
+.main-container{
+    width:100%;
+    height:100vh;
+}
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width:60%;
+    height:70%;
+    border-radius: 20px;
+    /* overflow:visible; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #000000;
+}
+.video-section video {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* Content Section */
+.content-section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(24, 24, 24, 0.9); /* Transparent black */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(55, 55, 55, 0.5);
+}
+.content-section h2 {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.content-section p {
+    font-size: 1.2rem;
+    color: #9F9C9C;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.content-section p strong {
+    color: #706A6A;
+}
+/* Animation for fade-in effect */
+[data-animate="fade-in"] {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    .content-section p {
+        font-size: 1rem;
+    }
+    .video-section {
+        height: 250px;
+    }
+}
+.left{
+    position:relative;
+    left:20%;
+}
+.right{
+    position:relative;
+    left:-20%;
+}
+nav{
+  width:100%;
+  display:flex;
+  position:absolute;
+  top:40px;
+  margin-right:150px;
+  align-items:center;
+  justify-content:end;
+}
+nav ul li{
+  list-style:none;
+  display:inline;
+  margin-right:80px;
+}
+nav a{
+  text-decoration:none;
+  font-size:24px;
+  color:white;
+  border:none;
+  /* transition:(5s); */
+}
+nav a:hover{
+  border-bottom:2px solid white;
+}
+.heading{
+    margin-top:100px;
+}
+</style>
+</head>
+<body>
+    <div class="paleblue">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <h1 class="heading">Sputnik 1:First in space legacy</h1>
+    </header>
+    <div class="main-container">
+        <div class="video-section" data-animate="fade-in">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DTDb3eKpPiw" title="Sputnik 1: First in space legacy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>What was Sputnik 1?</h2>
+            <p>Sputnik 1 was the first artificial satellite to orbit Earth, launched by the Soviet Union. Its launch marked the beginning of the space age and was a major milestone in human exploration of space.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Mission: Sputnik 1</h2>
+            <p><strong>Launch Date:</strong> October 4, 1957</p>
+            <p><strong>Objective:</strong> Its primary mission was to test the feasibility of launching an artificial satellite into orbit and to gather basic data about the Earth's upper atmosphere.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Orbit</h2>
+            <p>Sputnik 1 orbited Earth at an altitude ranging from 215 to 939 kilometers (134 to 583 miles) and completed one orbit every 96 minutes.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>The Journey</h2>
+            <p>It operated for 21 days, broadcasting radio signals until its batteries died. Sputnik 1 reentered Earth's atmosphere and burned up on January 4, 1958.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Outcome</h2>
+            <p>Sputnik 1's successful launch demonstrated the Soviet Union's technological capabilities and advanced understanding of rocketry.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Legacy</h2>
+            <p>The achievement inspired scientists and engineers worldwide, eventually leading to human spaceflights and lunar landings.</p>
+        </div>
+    </div>
+</body>
+</html>
