@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salyut 1</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    /* changed the cursor to EARTH */
+    cursor: url(earth-cursor.png),auto;
+}
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    background-image: url("space-background2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    height: 100%;
+}
+/* Header Styling */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+.heading {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+/* Video Section */
+.main-container{
+    width:100%;
+    height:100vh;
+}
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width:60%;
+    height:70%;
+    border-radius: 20px;
+    /* overflow:visible; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #000000;
+}
+.video-section video {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* Content Section */
+.content-section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(24, 24, 24, 0.9); /* Transparent black */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(55, 55, 55, 0.5);
+}
+.content-section h2 {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.content-section p {
+    font-size: 1.2rem;
+    color: #9F9C9C;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.content-section p strong {
+    color: #706A6A;
+}
+/* Animation for fade-in effect */
+[data-animate="fade-in"] {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    .content-section p {
+        font-size: 1rem;
+    }
+    .video-section {
+        height: 250px;
+    }
+}
+.left{
+    position:relative;
+    left:20%;
+}
+.right{
+    position:relative;
+    left:-20%;
+}
+nav{
+  
+  width:100%;
+  display:flex;
+  position:absolute;
+  top:40px;
+  margin-right:150px;
+  align-items:center;
+  justify-content:end;
+  
+}
+nav ul li{
+  list-style:none;
+  display:inline;
+  margin-right:80px;
+}
+nav a{
+  text-decoration:none;
+  font-size:24px;
+  color:white;
+  border:none;
+  /* transition:(5s); */
+}
+nav a:hover{
+  border-bottom:2px solid white;
+  
+}
+
+.heading{
+    margin-top: 100px;
+}
+</style>
+</head>
+
+
+<body>
+    <div class="paleblue">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <h1 class="heading">Salyut 1: The First Space Station</h1>
+    </header>
+    <div class="main-container">
+        <div class="video-section" data-animate="fade-in">
+            <iframe width="1038" height="584" src="https://www.youtube.com/embed/Ju6rmFm1_9M" title="50 Years Ago The First Space Station Launched - Salyut 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>What was Salyut 1?</h2>
+            <p>Salyut 1 was the world’s first space station, launched by the Soviet Union on April 19, 1971, as part of the Soviet space program. It marked a significant milestone in human space exploration, providing a platform for extended scientific research and experiments in orbit.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Mission: Salyut 1</h2>
+            <p><strong>Launch Date:</strong> April 19, 1971.</p>
+            <p><strong>Objective:</strong>The primary mission of Salyut 1 was to test the viability of long-term human habitation and work in space. It aimed to support scientific research, including Earth observation, medical studies, and experiments in microgravity, while demonstrating the feasibility of a modular space station design.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>The Journey</h2>
+            <p>Successful Crewed Mission - Soyuz 11:Soyuz 11 successfully docked with Salyut 1 on June 7, 1971. The three-man crew (Georgi Dobrovolski, Viktor Patsayev, and Vladislav Volkov) entered the station, marking the first long-duration stay in orbit. They conducted various scientific experiments and observations during their 23-day mission.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Outcome</h2>
+            <p>The outcome of Salyut 1 was a mixed success, as it demonstrated the feasibility of human habitation in space and provided valuable data on long-term space missions, including experiments in Earth observation, biology, and microgravity. Despite its scientific achievements, the mission was marred by the tragic loss of the Soyuz 11 crew, who perished during re-entry due to cabin depressurization. Nevertheless, Salyut 1's success in advancing space station technology laid the groundwork for future Soviet space stations, including Mir, and contributed to the overall development of space station design and operations, influencing later international projects like the International Space Station.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Legacy</h2>
+            <p>Salyut 1 established the foundation for modern space stations by proving humans could live and work in space for extended periods. Despite the tragic loss of the Soyuz 11 crew, the mission advanced space technology and operational knowledge. It inspired the development of more advanced Soviet space stations, including the Mir, and contributed to the collaborative efforts leading to the ISS. Salyut 1 remains a landmark achievement in the history of human space exploration, symbolizing both the potential and risks of venturing beyond Earth.            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars 3</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    /* changed the cursor to EARTH */
+    cursor: url(earth-cursor.png),auto;
+}
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    background-image: url("space-background2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    height: 100%;
+}
+/* Header Styling */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+.heading {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+/* Video Section */
+.main-container{
+    width:100%;
+    height:100vh;
+}
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width:60%;
+    height:70%;
+    border-radius: 20px;
+    /* overflow:visible; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #000000;
+}
+.video-section video {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* Content Section */
+.content-section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(24, 24, 24, 0.9); /* Transparent black */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(55, 55, 55, 0.5);
+}
+.content-section h2 {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.content-section p {
+    font-size: 1.2rem;
+    color: #9F9C9C;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.content-section p strong {
+    color: #706A6A;
+}
+/* Animation for fade-in effect */
+[data-animate="fade-in"] {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    .content-section p {
+        font-size: 1rem;
+    }
+    .video-section {
+        height: 250px;
+    }
+}
+.left{
+    position:relative;
+    left:20%;
+}
+.right{
+    position:relative;
+    left:-20%;
+}
+nav{
+  
+  width:100%;
+  display:flex;
+  position:absolute;
+  top:40px;
+  margin-right:150px;
+  align-items:center;
+  justify-content:end;
+  
+}
+nav ul li{
+  list-style:none;
+  display:inline;
+  margin-right:80px;
+}
+nav a{
+  text-decoration:none;
+  font-size:24px;
+  color:white;
+  border:none;
+  /* transition:(5s); */
+}
+nav a:hover{
+  border-bottom:2px solid white;
+  
+}
+
+.heading{
+    margin-top: 100px;
+}
+</style>
+</head>
+
+
+<body>
+
+    <div class="paleblue">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <h1 class="heading">Mars 3: First Successful Landing on Mars</h1>
+    </header>
+    <div class="main-container">
+        <div class="video-section" data-animate="fade-in">
+            <iframe width="809" height="607" src="https://www.youtube.com/embed/SCqiG3xciC4" title="MARS 2 &amp; 3 - Lander and Rover models (Soviet Mars program, 1971, Prop-M rover, Mars 4M, Mars 71)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>What was Mars 3</h2>
+            <p>Mars 3 was a Soviet space mission that made history as the first spacecraft to land successfully on Mars. Part of the Soviet Union's Mars program, it was launched by the Soviet space agency in 1971 with the goal of studying the Martian surface, atmosphere, and climate. Mars 3's mission included sending back data about the planet’s environment and conducting scientific experiments, although its lander operated for a brief period before losing communication.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Mission: Mars 3</h2>
+            <p><strong>Launch Date:</strong> May 28, 1971</p>
+            <p><strong>Objective:</strong> The mission of Mars 3 was to land on Mars and transmit data about the planet’s surface and atmosphere, including the composition of the Martian soil and the structure of its atmosphere. The spacecraft carried a lander equipped with scientific instruments to study Mars' conditions, including a camera, spectrometers, and sensors for measuring temperature and pressure. Mars 3 was designed to be a part of the Soviet Union's broader efforts to explore Mars and understand its potential for past or present life.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Orbit</h2>
+            <p>Mars 3 was launched on May 28, 1971, aboard a Proton rocket from the Baikonur Cosmodrome. The spacecraft traveled for nearly 7 months before entering Mars' orbit on December 2, 1971. After reaching Mars, the spacecraft separated its orbiter and lander. The orbiter continued to gather data about Mars, while the lander descended toward the Martian surface. On December 2, 1971, the lander successfully touched down on Mars, becoming the first spacecraft to achieve a soft landing on the planet. However, the lander transmitted data for only 14.5 seconds before communication was lost.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Outcome</h2>
+            <p>Mars 3's landing was a milestone in space exploration, as it was the first successful landing on Mars. The orbiter continued to send back valuable data on Mars' atmosphere, surface, and weather patterns. However, the lander's brief transmission, lasting only 14.5 seconds, left many of its scientific goals unfulfilled. The loss of communication was attributed to a failure of the lander's electronic systems or a dust storm. Despite the short duration of the lander's operation, Mars 3 provided valuable insights into Mars' environment, and the data sent by the orbiter contributed to future Mars exploration missions.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Legacy</h2>
+            <p>Mars 3's landing remains a significant achievement in the history of planetary exploration, as it was the first successful attempt at landing on Mars. The mission demonstrated the challenges of landing on another planet and paved the way for future Mars missions, including those that would successfully explore the Martian surface in more detail, such as NASA’s Viking, Pathfinder, and the rovers Spirit, Opportunity, and Curiosity. Although the lander’s mission was short-lived, Mars 3’s successful touchdown provided valuable data and inspired continued efforts to explore Mars.</p>
+        </div>
+    </div>
+</body>
+</html>

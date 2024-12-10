@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptune Encounter</title>
+
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: monospace;
+        /* changed the cursor to EARTH */
+        cursor: url(earth-cursor.png),auto;
+    }
+    /* Body Styling */
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.8;
+        background-image: url("space-background2.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: #FFFFFF;
+        height: 100%;
+    }
+    /* Header Styling */
+    header {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .heading {
+        font-size: 2.5rem;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+    /* Video Section */
+    .main-container{
+        width:100%;
+        height:100vh;
+    }
+    .video-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        max-width:60%;
+        height:70%;
+        border-radius: 20px;
+        /* overflow:visible; */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        background-color: #000000;
+    }
+    .video-section video {
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    /* Content Section */
+    .content-section {
+        margin: 20px auto;
+        padding: 20px;
+        width: 90%;
+        max-width: 1200px;
+        background-color: rgba(24, 24, 24, 0.9); /* Transparent black */
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(55, 55, 55, 0.5);
+    }
+    .content-section h2 {
+        font-size: 1.8rem;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+    .content-section p {
+        font-size: 1.2rem;
+        color: #9F9C9C;
+        margin-bottom: 15px;
+        text-align: justify;
+    }
+    .content-section p strong {
+        color: #706A6A;
+    }
+    /* Animation for fade-in effect */
+    [data-animate="fade-in"] {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s ease-in forwards;
+    }
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /* Media Queries */
+    @media (max-width: 768px) {
+        .heading {
+            font-size: 2rem;
+        }
+        .content-section h2 {
+            font-size: 1.5rem;
+        }
+        .content-section p {
+            font-size: 1rem;
+        }
+        .video-section {
+            height: 250px;
+        }
+    }
+    .left{
+        position:relative;
+        left:20%;
+    }
+    .right{
+        position:relative;
+        left:-20%;
+    }
+    nav{
+      
+      width:100%;
+      display:flex;
+      position:absolute;
+      top:40px;
+      margin-right:150px;
+      align-items:center;
+      justify-content:end;
+      
+    }
+    nav ul li{
+      list-style:none;
+      display:inline;
+      margin-right:80px;
+    }
+    nav a{
+      text-decoration:none;
+      font-size:24px;
+      color:white;
+      border:none;
+      /* transition:(5s); */
+    }
+    nav a:hover{
+      border-bottom:2px solid white;
+      
+    }
+    
+    .heading{
+        margin-top: 100px;
+    }
+    </style>
+
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <h1 class="heading">Neptune Encounter: The Last Stop of Voyager 2</h1>
+    </header>
+    <div class="main-container">
+        <div class="video-section" data-animate="fade-in">
+            <iframe width="1038" height="584" src="https://www.youtube.com/embed/RFCuVf7xa1w" title="VOYAGER 1 और VOYAGER 2 सैटेलाइट्स की अनोखी खोजें | Voyager Satellite Space Discoveries" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>What was the Neptune Encounter?</h2>
+            <p>The Neptune Encounter refers to the historic flyby of Neptune by NASA’s Voyager 2 spacecraft on August 25, 1989. This milestone marked humanity’s first and only close-up study of the eighth planet in our solar system. During the encounter, Voyager 2 captured detailed data on Neptune’s atmosphere, moons, rings, and magnetosphere, providing unprecedented insights into this distant world.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Mission Highlights</h2>
+            <p><strong>Encounter Date:</strong> August 25, 1989</p>
+            <p><strong>Objective:</strong> To closely study Neptune’s atmospheric composition, weather systems, magnetic field, and moons. Voyager 2 also aimed to capture high-resolution images and collect data about Triton, Neptune’s largest moon, known for its retrograde orbit and unique geological features.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Journey</h2>
+            <p>After launching in 1977, Voyager 2 traveled over 4.3 billion kilometers to reach Neptune. The encounter followed successful flybys of Jupiter, Saturn, and Uranus, making Neptune the final stop in Voyager 2's "Grand Tour." During the flyby, the spacecraft approached within 4,950 kilometers of Neptune’s cloud tops, capturing spectacular images of its vibrant blue atmosphere and powerful storms, including the Great Dark Spot.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Outcome</h2>
+            <p>The Neptune Encounter revealed fascinating details about the planet, such as its supersonic winds, dynamic weather systems, and faint ring system. Voyager 2 also provided close-up images of Triton, showcasing its icy surface, cryovolcanic activity, and thin nitrogen atmosphere. The data significantly expanded our understanding of the outer planets and their unique characteristics.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Legacy</h2>
+            <p>The Neptune Encounter remains a monumental achievement in space exploration, representing the culmination of Voyager 2’s Grand Tour. The mission provided groundbreaking insights into the most distant planet of our solar system, inspiring future explorations of the ice giants. Voyager 2's findings continue to shape our knowledge of planetary science and the potential for missions to Neptune and Uranus in the future.</p>
+        </div>
+    </div>
+</body>
+</html>
+

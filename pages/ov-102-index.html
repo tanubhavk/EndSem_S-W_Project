@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OV-102: Space Shuttle Columbia</title>
+
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: monospace;
+        /* changed the cursor to EARTH */
+        cursor: url(earth-cursor.png),auto;
+    }
+    /* Body Styling */
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.8;
+        background-image: url("space-background2.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: #FFFFFF;
+        height: 100%;
+    }
+    /* Header Styling */
+    header {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .heading {
+        font-size: 2.5rem;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+    /* Video Section */
+    .main-container{
+        width:100%;
+        height:100vh;
+    }
+    .video-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        max-width:60%;
+        height:70%;
+        border-radius: 20px;
+        /* overflow:visible; */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        background-color: #000000;
+    }
+    .video-section video {
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    /* Content Section */
+    .content-section {
+        margin: 20px auto;
+        padding: 20px;
+        width: 90%;
+        max-width: 1200px;
+        background-color: rgba(24, 24, 24, 0.9); /* Transparent black */
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(55, 55, 55, 0.5);
+    }
+    .content-section h2 {
+        font-size: 1.8rem;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+    .content-section p {
+        font-size: 1.2rem;
+        color: #9F9C9C;
+        margin-bottom: 15px;
+        text-align: justify;
+    }
+    .content-section p strong {
+        color: #706A6A;
+    }
+    /* Animation for fade-in effect */
+    [data-animate="fade-in"] {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s ease-in forwards;
+    }
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /* Media Queries */
+    @media (max-width: 768px) {
+        .heading {
+            font-size: 2rem;
+        }
+        .content-section h2 {
+            font-size: 1.5rem;
+        }
+        .content-section p {
+            font-size: 1rem;
+        }
+        .video-section {
+            height: 250px;
+        }
+    }
+    .left{
+        position:relative;
+        left:20%;
+    }
+    .right{
+        position:relative;
+        left:-20%;
+    }
+    nav{
+      
+      width:100%;
+      display:flex;
+      position:absolute;
+      top:40px;
+      margin-right:150px;
+      align-items:center;
+      justify-content:end;
+      
+    }
+    nav ul li{
+      list-style:none;
+      display:inline;
+      margin-right:80px;
+    }
+    nav a{
+      text-decoration:none;
+      font-size:24px;
+      color:white;
+      border:none;
+      /* transition:(5s); */
+    }
+    nav a:hover{
+      border-bottom:2px solid white;
+      
+    }
+    
+    .heading{
+        margin-top: 100px;
+    }
+    </style> 
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <h1 class="heading">OV-102: Space Shuttle Columbia</h1>
+    </header>
+    <div class="main-container">
+        <div class="video-section" data-animate="fade-in">
+            <iframe width="1038" height="584" src="https://www.youtube.com/embed/EW0_Be0Mnlk" title="Columbia disaster: Evidence tells the story of tragic ending to space mission" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>What was OV-102?</h2>
+            <p>OV-102, known as the Space Shuttle Columbia, was the first operational spacecraft in NASA's Space Shuttle program. Launched on April 12, 1981, Columbia became a symbol of a new era in reusable space exploration, completing a total of 28 missions over 22 years. It was designed to carry astronauts and payloads into low Earth orbit, conduct scientific research, and enable the construction of the International Space Station (ISS).</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Mission: OV-102</h2>
+            <p><strong>First Flight:</strong> April 12, 1981 (STS-1)</p>
+            <p><strong>Objective:</strong> Columbia's missions included deploying satellites, conducting scientific experiments, testing spaceflight systems, and supporting the assembly of the ISS. As the inaugural shuttle, it also demonstrated the feasibility of reusable spacecraft, paving the way for the subsequent shuttle fleet.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Journey</h2>
+            <p>Columbia’s maiden flight, STS-1, marked a new chapter in space exploration. Over its operational life, Columbia undertook significant missions, including the deployment of the Chandra X-ray Observatory and numerous Spacelab experiments. It carried a diverse range of payloads, from satellites to scientific instruments, contributing to advancements in multiple fields. Tragically, its journey ended during its 28th mission, STS-107, when it disintegrated upon reentry on February 1, 2003, due to damage sustained during launch.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Outcome</h2>
+            <p>Columbia played a vital role in advancing human space exploration, showcasing the capabilities of reusable spacecraft. Its missions provided invaluable data across various scientific disciplines, from astronomy to biology. Despite its tragic end, Columbia’s contributions laid the foundation for further advancements in space science and technology.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Legacy</h2>
+            <p>Space Shuttle Columbia remains a cornerstone in the history of space exploration. Its legacy is commemorated through its groundbreaking missions, the lessons learned from its loss, and the improvements to spaceflight safety and technology. Columbia’s achievements continue to inspire future generations of scientists, engineers, and explorers striving to expand humanity’s reach into space.</p>
+        </div>
+    </div>
+</body>
+</html>
