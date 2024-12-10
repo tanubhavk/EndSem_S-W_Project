@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyager 2: A Journey Through the Outer Planets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    /* changed the cursor to EARTH */
+    cursor: url(earth-cursor.png),auto;
+}
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    background-image: url("space-background2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    height: 100%;
+}
+/* Header Styling */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+.heading {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+/* Video Section */
+.main-container{
+    width:100%;
+    height:100vh;
+}
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width:60%;
+    height:70%;
+    border-radius: 20px;
+    /* overflow:visible; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #000000;
+}
+.video-section video {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* Content Section */
+.content-section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(24, 24, 24, 0.9); /* Transparent black */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(55, 55, 55, 0.5);
+}
+.content-section h2 {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.content-section p {
+    font-size: 1.2rem;
+    color: #9F9C9C;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.content-section p strong {
+    color: #706A6A;
+}
+/* Animation for fade-in effect */
+[data-animate="fade-in"] {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    .content-section p {
+        font-size: 1rem;
+    }
+    .video-section {
+        height: 250px;
+    }
+}
+.left{
+    position:relative;
+    left:20%;
+}
+.right{
+    position:relative;
+    left:-20%;
+}
+nav{
+  
+  width:100%;
+  display:flex;
+  position:absolute;
+  top:40px;
+  margin-right:150px;
+  align-items:center;
+  justify-content:end;
+  
+}
+nav ul li{
+  list-style:none;
+  display:inline;
+  margin-right:80px;
+}
+nav a{
+  text-decoration:none;
+  font-size:24px;
+  color:white;
+  border:none;
+  /* transition:(5s); */
+}
+nav a:hover{
+  border-bottom:2px solid white;
+  
+}
+
+.heading{
+    margin-top: 100px;
+}
+</style>
+
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <h1 class="heading">Voyager 2: A Journey Through the Outer Planets</h1>
+    </header>
+    <div class="main-container">
+        <div class="video-section" data-animate="fade-in">
+            <iframe width="1038" height="584" src="https://www.youtube.com/embed/RFCuVf7xa1w" title="VOYAGER 1 और VOYAGER 2 सैटेलाइट्स की अनोखी खोजें | Voyager Satellite Space Discoveries" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>What was Voyager 2?</h2>
+            <p>Voyager 2 is one of NASA's most remarkable space probes, launched on August 20, 1977, as part of the Voyager program. It was designed to explore the outer planets of our solar system, including Jupiter, Saturn, Uranus, and Neptune, marking humanity's first and only close encounters with Uranus and Neptune. Voyager 2 carries a Golden Record with sounds and images representing Earth, intended as a message to potential extraterrestrial civilizations.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Mission: Voyager 2</h2>
+            <p><strong>Launch Date:</strong> August 20, 1977</p>
+            <p><strong>Objective:</strong> Voyager 2 aimed to take advantage of a rare planetary alignment to conduct a "Grand Tour" of the outer planets. Its mission included detailed studies of the gas giants, their moons, rings, and magnetospheres, as well as continuing to explore interstellar space.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Journey</h2>
+            <p>Voyager 2's journey began with its launch in 1977, followed by close encounters with Jupiter (1979) and Saturn (1981). It made history in 1986 by becoming the first spacecraft to visit Uranus, where it captured data on the planet's unique magnetic field, rings, and moons. In 1989, Voyager 2 completed its planetary tour with a flyby of Neptune, revealing details about its atmosphere, storms, and largest moon, Triton. Now traveling through interstellar space, it continues to send data back to Earth, over 46 years after its launch.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Outcome</h2>
+            <p>Voyager 2 provided groundbreaking discoveries about the outer planets, including the first close-up images of Uranus and Neptune. It revealed the diversity and complexity of the gas giants and their moons, contributing invaluable knowledge about our solar system. The spacecraft remains operational and continues to study the interstellar medium, extending humanity's reach into the cosmos.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Legacy</h2>
+            <p>Voyager 2's legacy is unparalleled in the history of space exploration. Its "Grand Tour" of the outer planets transformed our understanding of the solar system, inspiring future missions such as Galileo, Cassini, and New Horizons. The Golden Record it carries represents humanity's hope for interstellar communication, making Voyager 2 a timeless ambassador of Earth in the vastness of space.</p>
+        </div>
+    </div>
+</body>
+</html>

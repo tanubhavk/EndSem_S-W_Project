@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubble Space Telescope</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: monospace;
+        /* changed the cursor to EARTH */
+        cursor: url(earth-cursor.png),auto;
+    }
+    /* Body Styling */
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.8;
+        background-image: url("space-background2.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: #FFFFFF;
+        height: 100%;
+    }
+    /* Header Styling */
+    header {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .heading {
+        font-size: 2.5rem;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+    /* Video Section */
+    .main-container{
+        width:100%;
+        height:100vh;
+    }
+    .video-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        max-width:60%;
+        height:70%;
+        border-radius: 20px;
+        /* overflow:visible; */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        background-color: #000000;
+    }
+    .video-section video {
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    /* Content Section */
+    .content-section {
+        margin: 20px auto;
+        padding: 20px;
+        width: 90%;
+        max-width: 1200px;
+        background-color: rgba(24, 24, 24, 0.9); /* Transparent black */
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(55, 55, 55, 0.5);
+    }
+    .content-section h2 {
+        font-size: 1.8rem;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+    .content-section p {
+        font-size: 1.2rem;
+        color: #9F9C9C;
+        margin-bottom: 15px;
+        text-align: justify;
+    }
+    .content-section p strong {
+        color: #706A6A;
+    }
+    /* Animation for fade-in effect */
+    [data-animate="fade-in"] {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s ease-in forwards;
+    }
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /* Media Queries */
+    @media (max-width: 768px) {
+        .heading {
+            font-size: 2rem;
+        }
+        .content-section h2 {
+            font-size: 1.5rem;
+        }
+        .content-section p {
+            font-size: 1rem;
+        }
+        .video-section {
+            height: 250px;
+        }
+    }
+    .left{
+        position:relative;
+        left:20%;
+    }
+    .right{
+        position:relative;
+        left:-20%;
+    }
+    nav{
+      
+      width:100%;
+      display:flex;
+      position:absolute;
+      top:40px;
+      margin-right:150px;
+      align-items:center;
+      justify-content:end;
+      
+    }
+    nav ul li{
+      list-style:none;
+      display:inline;
+      margin-right:80px;
+    }
+    nav a{
+      text-decoration:none;
+      font-size:24px;
+      color:white;
+      border:none;
+      /* transition:(5s); */
+    }
+    nav a:hover{
+      border-bottom:2px solid white;
+      
+    }
+    
+    .heading{
+        margin-top: 100px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <h1 class="heading">Hubble Space Telescope: Unlocking the Universe</h1>
+    </header>
+    <div class="main-container">
+        <div class="video-section" data-animate="fade-in">
+            <iframe width="1038" height="584" src="https://www.youtube.com/embed/MqrcuWOKeno" title="How Hubble Works | Spaced Out" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>What is the Hubble Space Telescope?</h2>
+            <p>The Hubble Space Telescope (HST) is a revolutionary observatory launched into low Earth orbit on April 24, 1990, by NASA and ESA. Positioned above Earth’s atmosphere, Hubble has provided unparalleled clarity and depth in its observations of the cosmos, capturing stunning images of stars, galaxies, and nebulae, while contributing to groundbreaking discoveries in astrophysics.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Mission Highlights</h2>
+            <p><strong>Launch Date:</strong> April 24, 1990</p>
+            <p><strong>Objective:</strong> To observe distant stars, galaxies, and other celestial phenomena, providing data to help scientists understand the structure, origins, and evolution of the universe. Hubble also played a pivotal role in determining the rate of expansion of the universe, known as the Hubble constant.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Journey and Discoveries</h2>
+            <p>Since its deployment from the Space Shuttle Discovery in 1990, Hubble has conducted over 1.5 million observations. Despite initial challenges, such as a flaw in its primary mirror, subsequent servicing missions by astronauts corrected these issues, enabling Hubble to produce iconic images like the Pillars of Creation, the Hubble Deep Field, and detailed views of exoplanets and black holes.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Outcome</h2>
+            <p>The Hubble Space Telescope has fundamentally transformed our understanding of the universe. It provided evidence for the existence of dark energy, mapped galaxies billions of light-years away, and revealed the age of the universe. Its observations have influenced thousands of scientific papers, making it one of the most productive scientific instruments in history.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Legacy</h2>
+            <p>Hubble remains a cornerstone of modern astronomy, inspiring a new generation of telescopes, such as the James Webb Space Telescope. Its breathtaking imagery and scientific contributions continue to shape our understanding of the cosmos and humanity's place within it. Decades after its launch, Hubble stands as a testament to human ingenuity and the unyielding quest for knowledge.</p>
+        </div>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer 10</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    /* changed the cursor to EARTH */
+    cursor: url(earth-cursor.png),auto;
+}
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    background-image: url("space-background2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    height: 100%;
+}
+/* Header Styling */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+.heading {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+/* Video Section */
+.main-container{
+    width:100%;
+    height:100vh;
+}
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width:60%;
+    height:70%;
+    border-radius: 20px;
+    /* overflow:visible; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #000000;
+}
+.video-section video {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* Content Section */
+.content-section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(24, 24, 24, 0.9); /* Transparent black */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(55, 55, 55, 0.5);
+}
+.content-section h2 {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.content-section p {
+    font-size: 1.2rem;
+    color: #9F9C9C;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.content-section p strong {
+    color: #706A6A;
+}
+/* Animation for fade-in effect */
+[data-animate="fade-in"] {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    .content-section p {
+        font-size: 1rem;
+    }
+    .video-section {
+        height: 250px;
+    }
+}
+.left{
+    position:relative;
+    left:20%;
+}
+.right{
+    position:relative;
+    left:-20%;
+}
+nav{
+  
+  width:100%;
+  display:flex;
+  position:absolute;
+  top:40px;
+  margin-right:150px;
+  align-items:center;
+  justify-content:end;
+  
+}
+nav ul li{
+  list-style:none;
+  display:inline;
+  margin-right:80px;
+}
+nav a{
+  text-decoration:none;
+  font-size:24px;
+  color:white;
+  border:none;
+  /* transition:(5s); */
+}
+nav a:hover{
+  border-bottom:2px solid white;
+  
+}
+
+.heading{
+    margin-top: 100px;
+}
+</style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <h1 class="heading">Pioneer 10: Exploring the Outer Solar System</h1>
+    </header>
+    <div class="main-container">
+        <div class="video-section" data-animate="fade-in">
+            <iframe width="1038" height="584" src="https://www.youtube.com/embed/65dL6pKgBkc" title="The Extraordinary Journey of NASA&#39;s Pioneer 10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>What was Pioneer 10?</h2>
+            <p>Pioneer 10 was a NASA spacecraft launched on March 2, 1972, to explore the outer solar system and study the asteroid belt, Jupiter, and the outer regions of the heliosphere. It was the first spacecraft to traverse the asteroid belt and provide close-up images and data of Jupiter, including its magnetic field, atmosphere, and moons.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Mission: Pioneer 10</h2>
+            <p><strong>Launch Date:</strong> March 2, 1972</p>
+            <p><strong>Objective:</strong> The mission aimed to study Jupiter's environment, the asteroid belt, and the outer solar system. It carried a plaque as a message to potential extraterrestrial life, symbolizing humanity's presence in the universe.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Journey</h2>
+            <p>Pioneer 10’s journey included traversing the asteroid belt and making a historic flyby of Jupiter on December 3, 1973. It sent back stunning images and crucial data about Jupiter’s massive storms and radiation belts. Pioneer 10 continued its mission as it exited the solar system, heading into interstellar space.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Outcome</h2>
+            <p>Pioneer 10 provided humanity's first detailed views of Jupiter and its surrounding environment. It successfully navigated through the asteroid belt, proving such a feat was possible. The spacecraft’s extended mission helped researchers study solar wind, cosmic rays, and the outer heliosphere until communication was lost in 2003.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Legacy</h2>
+            <p>Pioneer 10 remains an iconic mission, as it was the first human-made object to leave the solar system. The Pioneer plaque onboard serves as a timeless message for extraterrestrial civilizations, symbolizing humanity's desire to explore and connect with the universe. Its groundbreaking data paved the way for future deep-space missions, including Voyager and New Horizons.</p>
+        </div>
+    </div>
+</body>
+</html>

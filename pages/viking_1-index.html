@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viking 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    /* changed the cursor to EARTH */
+    cursor: url(earth-cursor.png),auto;
+}
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    background-image: url("space-background2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    height: 100%;
+}
+/* Header Styling */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+.heading {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+/* Video Section */
+.main-container{
+    width:100%;
+    height:100vh;
+}
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width:60%;
+    height:70%;
+    border-radius: 20px;
+    /* overflow:visible; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #000000;
+}
+.video-section video {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* Content Section */
+.content-section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(24, 24, 24, 0.9); /* Transparent black */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(55, 55, 55, 0.5);
+}
+.content-section h2 {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.content-section p {
+    font-size: 1.2rem;
+    color: #9F9C9C;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.content-section p strong {
+    color: #706A6A;
+}
+/* Animation for fade-in effect */
+[data-animate="fade-in"] {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    .content-section p {
+        font-size: 1rem;
+    }
+    .video-section {
+        height: 250px;
+    }
+}
+.left{
+    position:relative;
+    left:20%;
+}
+.right{
+    position:relative;
+    left:-20%;
+}
+nav{
+  
+  width:100%;
+  display:flex;
+  position:absolute;
+  top:40px;
+  margin-right:150px;
+  align-items:center;
+  justify-content:end;
+  
+}
+nav ul li{
+  list-style:none;
+  display:inline;
+  margin-right:80px;
+}
+nav a{
+  text-decoration:none;
+  font-size:24px;
+  color:white;
+  border:none;
+  /* transition:(5s); */
+}
+nav a:hover{
+  border-bottom:2px solid white;
+  
+}
+
+.heading{
+    margin-top: 100px;
+}
+</style>
+
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <h1 class="heading">Viking 1: Unlocking the Mysteries of Mars</h1>
+    </header>
+    <div class="main-container">
+        <div class="video-section" data-animate="fade-in">
+            <iframe width="1038" height="584" src="https://www.youtube.com/embed/2omjPrRxJBk" title="How Viking Conquered Mars: Entry, Descent, and Landing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>What was Viking 1?</h2>
+            <p>Viking 1 was part of NASA's Viking program and became the first spacecraft to successfully land and operate on the surface of Mars. Launched on August 20, 1975, it was designed to study the Martian surface and search for signs of life, providing groundbreaking insights into the red planet.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Mission: Viking 1</h2>
+            <p><strong>Launch Date:</strong> August 20, 1975</p>
+            <p><strong>Objective:</strong> The mission aimed to study Mars' geology, atmosphere, and climate, and to search for evidence of life. Viking 1 consisted of an orbiter and a lander, equipped with cameras, spectrometers, and biological experiments designed to analyze the Martian soil for organic material.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Journey and Landing</h2>
+            <p>Viking 1 arrived at Mars on June 19, 1976, entering orbit to survey the surface for a suitable landing site. On July 20, 1976, the lander successfully touched down in Chryse Planitia, marking the first successful operation of a spacecraft on Mars' surface. The orbiter continued to map the planet while the lander conducted experiments and captured iconic images of the Martian landscape.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Outcome</h2>
+            <p>The Viking 1 mission provided the first clear images of Mars' surface, revealing a desolate yet intriguing world. Its experiments found no definitive signs of life but greatly enhanced our understanding of Martian geology and climate. The orbiter's data helped create detailed maps of the planet's surface, paving the way for future missions.</p>
+        </div>
+        <div class="content-section" data-animate="fade-in">
+            <h2>Legacy</h2>
+            <p>Viking 1 set the standard for robotic planetary exploration. Its successful landing and long-term operations inspired subsequent Mars missions, such as the Pathfinder, Spirit, Opportunity, and Curiosity rovers. Viking 1's contributions remain a cornerstone in our quest to understand Mars and its potential for past or present life.</p>
+        </div>
+    </div>
+</body>
+</html>
