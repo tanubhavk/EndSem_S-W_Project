@@ -2,7 +2,12 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family:monospace;
+
+  font-family: sans-serif;
+  /* changed the cursor to EARTH */
+  cursor: url(earth-cursor.png), auto;
+  
+
 }
 
 body {
@@ -12,13 +17,13 @@ body {
   background-image:url('stars.jpg');
   background-size:cover;
 }
-/* home----------------------page */
-.paleblue{
-  height:100%;
-  width:100%;
-  display:flex;
-  align-items:center;
+.paleblue {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
+
   /* position:absolute; */
   /* background-image:url('https://media0.giphy.com/media/1zi0rcnL4vDMeJizBh/200.webp?cid=790b76111e6vl25vk11gs8aoy3hbp837h165thv6iy814yxa&ep=v1_gifs_search&rid=200.webp&ct=g'); */
   background-size:cover;
@@ -99,6 +104,7 @@ nav a:hover{
 .main-timeline-container{
   /* background-image:url('https://media0.giphy.com/media/1zi0rcnL4vDMeJizBh/200.webp?cid=790b76111e6vl25vk11gs8aoy3hbp837h165thv6iy814yxa&ep=v1_gifs_search&rid=200.webp&ct=g'); */
   background-size:cover;
+
 }
 .upper_part {
   width: 100%;
@@ -119,7 +125,6 @@ nav a:hover{
   border-bottom: 2px solid white;
 }
 
-/* Styling timeline */
 .time-line {
   position: relative;
   max-width: 1200px;
@@ -130,8 +135,7 @@ nav a:hover{
   width: 50%;
   position: relative;
   padding: 10px 50px;
-  margin-top:-10px;
-  /* background-color:brown; */
+  margin-top: -10px;
 }
 
 .text-box {
@@ -163,12 +167,14 @@ img{
   height: 225px;
   margin-right:5px;
   width:230px;
+
 }
 
 .text-box p {
   font-size: 18px;
   font-family:monospace;
 }
+
 
 a {
   text-decoration: none;
@@ -177,12 +183,15 @@ a {
 }
 a p{
   color: white;
+
 }
 .description {
   display: flex;
   flex-direction: column;
+
   justify-content: space-evenly;
   padding:0px 0px 0px 10px;
+
 }
 
 .left {
@@ -190,6 +199,7 @@ a p{
 }
 
 .right {
+
   right:-53%;
 }
 
@@ -238,19 +248,59 @@ a p{
 
 /* animation */
 @keyframes appear{
+
   from {
     opacity: 0;
-    scale:0.5;
+    scale: 0.5;
   }
   to {
     opacity: 1;
-    scale: 1;
+    scale:1;
   }
 }
-.left,.right{
+.left,
+.right {
   animation: appear 5s linear;
   animation-timeline: view();
   animation-range: entry 0;
+
+
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+    
+
+  }
+}
+@keyframes blink {
+
+  50% {
+    border-color: transparent;
+  }
+
+}
+
+.typewriter {
+  display: flex;
+  justify-content: center;
+}
+.typewriter h1 {
+  font-family: monospace;
+
+  margin-inline: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  width: 0;
+  animation: typing 1.7s steps(11, end) forwards, blink 1s step-end infinite;
+}
+
+
 }
 
 /* styling date */
@@ -319,3 +369,4 @@ a p{
 .card-container:hover .card{
   transform:rotateY(180deg) ;
 } */
+
