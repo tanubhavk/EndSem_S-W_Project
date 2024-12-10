@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+/* Background Section */
+.bg , img {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('moon.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+/* Heading Styling */
+.heading {
+    font-size: 50px;
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: -50px;
+}
+
+/* Paragraph Styling */
+.p1 {
+    width: 80%;
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+    margin: 20px 0;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 50px 0;
+    color: white;
+    gap: 20px;
+}
+
+.feature {
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    border-radius: 10px;
+}
+
+.feature:hover {
+    transform: scale(1.1);
+}
+
+.feature h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #c48613;
+}
+
+.feature p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Lunar Image Section */
+.rocket-img2 {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.rocket-img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1); /* Normal size initially */
+    transition: transform 0.5s ease-in-out; /* Smooth zoom effect */
+}
+
+/* Legacy Section */
+.legacy {
+    background-color: #000000;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.legacy h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.legacy p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
