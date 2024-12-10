@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dark Theme Setup */
+body {
+    background-color: #000;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url(hayabusa-asteroid.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .overlay {
+
+    padding: 40px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #ffd700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.4rem;
+}
+
+/* About Mission Section */
+.about-mission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 40px;
+    background-color: #000; /* Ensure black background */
+}
+
+.about-mission .content {
+    max-width: 600px;
+}
+
+.about-mission h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.about-mission p {
+    font-size: 1.2rem;
+}
+
+.about-mission .image img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Highlights Section */
+.highlights {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #000; /* Ensure black background */
+}
+
+.highlights h2 {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 30px;
+}
+
+.highlight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+/* Single Image Section */
+.gallery {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #000; /* Ensure black background */
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 30px;
+}
+
+.image-single img {
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Legacy Section */
+.legacy {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #000; /* Ensure black background */
+}
+
+.legacy h2 {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.legacy p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+nav{
+  
+    width:100%;
+    display:flex;
+    position:absolute;
+    top:40px;
+    margin-right:150px;
+    align-items:center;
+    justify-content:end;
+    
+  }
+  nav ul li{
+    list-style:none;
+    display:inline;
+    margin-right:80px;
+  }
+  nav a{
+    text-decoration:none;
+    font-size:24px;
+    color:white;
+    border:none;
+    /* transition:(5s); */
+  }
+  nav a:hover{
+    border-bottom:2px solid white;
+    
+  }

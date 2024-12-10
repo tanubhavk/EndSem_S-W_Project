@@ -1,0 +1,197 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+/* Page-wide black background */
+body {
+    background-color: black; /* Makes the overall page background black */
+    color: white; /* Ensures text remains visible */
+}
+
+/* Hero Section */
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background: url(horizon-img.jpg) no-repeat center center/cover;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero .overlay {
+    /* background: rgba(0, 0, 0, 0.6); */
+    padding: 40px;
+    margin-top: -100px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #ffd700;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: black;
+
+}
+
+/* Mission Overview Section */
+.mission-overview {
+    background: black; /* Matches the new background theme */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.mission-overview h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.mission-overview p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Achievements Section */
+.achievements {
+    background: black; /* Matches the new background theme */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.achievements h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffd700;
+}
+
+.achievement-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1); /* Enlarges the card on hover */
+
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Images Section */
+.images {
+    background: black; /* Matches the new background theme */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.images h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffd700;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Legacy Section */
+.legacy {
+    background: black; /* Matches the new background theme */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.legacy h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.legacy p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+nav{
+  
+    width:100%;
+    display:flex;
+    position:absolute;
+    top:40px;
+    margin-right:150px;
+    align-items:center;
+    justify-content:end;
+    
+  }
+  nav ul li{
+    list-style:none;
+    display:inline;
+    margin-right:80px;
+  }
+  nav a{
+    text-decoration:none;
+    font-size:24px;
+    color:white;
+    border:none;
+    /* transition:(5s); */
+  }
+  nav a:hover{
+    border-bottom:2px solid white;
+    
+  }
